@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+    <title>GitStats - pcs_admin</title>
+    <link href='../../../assets/bootstrap/css/bootstrap.min.css' rel='stylesheet' type='text/css' />
+    <style>
+      body { padding-top: 60px; }
+    </style>
+    <link href='../../../assets/bootstrap/css/bootstrap-responsive.min.css' rel='stylesheet' type='text/css' />
+    <script src='../../../assets/jquery.min.js' type='text/javascript'></script>
+    <script src='../../../assets/bootstrap/js/bootstrap.min.js' type='text/javascript'></script>
+    <script src='../../../assets/highstock.js' type='text/javascript'></script>
+  </head>
+  <body>
+    <div class='navbar navbar-fixed-top'>
+      <div class='navbar-inner'>
+        <div class='container'>
+          <a class='btn btn-navbar' data-target='.nav-collapse' data-toggle='collapse'>
+            <span class='icon-bar'></span>
+            <span class='icon-bar'></span>
+            <span class='icon-bar'></span>
+          </a>
+          <a class='brand' href='../../../index.html'>GitStats - pcs_admin</a>
+          <div class='nav-collapse collapse'>
+            <ul class='nav'>
+              <li class=''>
+                <a href='../../../general.html'>General</a>
+              </li>
+              <li class=''>
+                <a href='../../../activity/by_date.html'>Activity</a>
+              </li>
+              <li class='active'>
+                <a href='../../best_authors.html'>Authors</a>
+              </li>
+              <li class=''>
+                <a href='../../../files/by_date.html'>Files</a>
+              </li>
+              <li class='active'>
+                <a href='../../../lines/by_date.html'>Lines</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='container'>
+      <div class='tabbable tabs-left'>
+        <ul class='nav nav-tabs'>
+          <li class=''>
+            <a href='commits_by_date.html'>Commits by date</a>
+          </li>
+          <li class='active'>
+            <a href='changed_lines_by_date.html'>Changed lines by date</a>
+          </li>
+          <li class=''>
+            <a href='insertions_by_date.html'>Lines added by date</a>
+          </li>
+          <li class=''>
+            <a href='deletions_by_date.html'>Lines deleted by date</a>
+          </li>
+        </ul>
+        <div class='tab-content'>
+          <div class='tab-pane active'>
+            <div class='page-header'>
+              <h1 class='pagination-centered'>Changed lines by date</h1>
+            </div>
+                    <script type="text/javascript">
+                    (function() {
+                      var onload = window.onload;
+                      window.onload = function(){
+                        if (typeof onload == "function") onload();
+                                var options = { "title": { "text": "" },"legend": { "enabled": true,"layout": "vertical","backgroundColor": "#FFFFFF","align": "left","verticalAlign": "top","x": 100,"y": 70,"floating": true,"shadow": true },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Lines" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.changed_lines_by_author_by_date" },"subtitle": {  },"series": [{ "name": "Inderpal Singh","type": "spline","data": [ [ 1362376572000,2 ],[ 1362385820000,66 ],[ 1362397051000,160 ],[ 1362475516000,378 ],[ 1362551271000,443 ],[ 1362551492000,517 ],[ 1362553258000,643 ],[ 1362553613000,4435 ],[ 1363772614000,4441 ],[ 1364213964000,4453 ],[ 1364215261000,4473 ],[ 1364215274000,22024 ],[ 1364491855000,22026 ],[ 1364491870000,44096 ],[ 1364538495000,44136 ],[ 1364539659000,44270 ],[ 1364539728000,54128 ],[ 1364563791000,54158 ],[ 1364563798000,54849 ],[ 1366178991000,54960 ],[ 1366266842000,79644 ],[ 1366267305000,79656 ],[ 1366361749000,79660 ],[ 1366361778000,79688 ],[ 1366362103000,106269 ],[ 1366539642000,106290 ],[ 1366539994000,129480 ],[ 1366623413000,129524 ],[ 1366628760000,129698 ],[ 1366629554000,163547 ],[ 1366636868000,163549 ],[ 1366694907000,163553 ],[ 1366696314000,163557 ],[ 1366711700000,163682 ],[ 1366716190000,163715 ],[ 1366716576000,193634 ],[ 1367326524000,193653 ],[ 1367580994000,193707 ],[ 1367581023000,193760 ],[ 1367582602000,219381 ],[ 1367820191000,219389 ],[ 1367820237000,219441 ],[ 1367833259000,219608 ],[ 1367834460000,266306 ],[ 1367841953000,266311 ],[ 1367844434000,266319 ],[ 1368091660000,266444 ],[ 1368092899000,266477 ],[ 1368093419000,295827 ],[ 1368103114000,295838 ],[ 1368103409000,295843 ],[ 1368437513000,296051 ],[ 1368534990000,296425 ],[ 1368535760000,324734 ],[ 1368539576000,324739 ],[ 1368683836000,324741 ],[ 1368685656000,355684 ],[ 1369226040000,355819 ],[ 1369288648000,355836 ],[ 1369378818000,356955 ],[ 1369379253000,391509 ],[ 1369402581000,425825 ],[ 1369652408000,455340 ],[ 1369812063000,455901 ],[ 1369812383000,458057 ],[ 1369832256000,458103 ],[ 1369832332000,466705 ],[ 1369904286000,466755 ],[ 1369907826000,466807 ],[ 1369913699000,466892 ],[ 1369914359000,519447 ],[ 1369980453000,519463 ],[ 1369995182000,519521 ],[ 1369995198000,519863 ],[ 1369998695000,519894 ],[ 1370003848000,519924 ],[ 1370004216000,521912 ],[ 1370437860000,522004 ],[ 1370508828000,522038 ],[ 1370512061000,522094 ],[ 1370518990000,522096 ],[ 1370519772000,522341 ],[ 1370520410000,550672 ],[ 1370948018000,550719 ],[ 1371194939000,550719 ],[ 1371195788000,550723 ],[ 1371196468000,603959 ],[ 1371558561000,603961 ],[ 1372163209000,603969 ],[ 1372163351000,606921 ],[ 1372588271000,607008 ],[ 1372588834000,638516 ],[ 1372598898000,640504 ],[ 1375257001000,640519 ] ] }] };
+                    
+                    window.chart_charts.changed_lines_by_author_by_date = new Highcharts.StockChart(options);
+            
+                      };
+                    })()
+                    </script>
+            <div id="charts.changed_lines_by_author_by_date"></div>
+            <small>
+              <center>5 best authors shown</center>
+            </small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
