@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+    <title>GitStats - pcs_admin</title>
+    <link href='../../../assets/bootstrap/css/bootstrap.min.css' rel='stylesheet' type='text/css' />
+    <style>
+      body { padding-top: 60px; }
+    </style>
+    <link href='../../../assets/bootstrap/css/bootstrap-responsive.min.css' rel='stylesheet' type='text/css' />
+    <script src='../../../assets/jquery.min.js' type='text/javascript'></script>
+    <script src='../../../assets/bootstrap/js/bootstrap.min.js' type='text/javascript'></script>
+    <script src='../../../assets/highstock.js' type='text/javascript'></script>
+  </head>
+  <body>
+    <div class='navbar navbar-fixed-top'>
+      <div class='navbar-inner'>
+        <div class='container'>
+          <a class='btn btn-navbar' data-target='.nav-collapse' data-toggle='collapse'>
+            <span class='icon-bar'></span>
+            <span class='icon-bar'></span>
+            <span class='icon-bar'></span>
+          </a>
+          <a class='brand' href='../../../index.html'>GitStats - pcs_admin</a>
+          <div class='nav-collapse collapse'>
+            <ul class='nav'>
+              <li class=''>
+                <a href='../../../general.html'>General</a>
+              </li>
+              <li class=''>
+                <a href='../../../activity/by_date.html'>Activity</a>
+              </li>
+              <li class='active'>
+                <a href='../../best_authors.html'>Authors</a>
+              </li>
+              <li class=''>
+                <a href='../../../files/by_date.html'>Files</a>
+              </li>
+              <li class=''>
+                <a href='../../../lines/by_date.html'>Lines</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='container'>
+      <div class='tabbable tabs-left'>
+        <ul class='nav nav-tabs'>
+          <li class='active'>
+            <a href='commits_by_date.html'>Commits by date</a>
+          </li>
+          <li class=''>
+            <a href='changed_lines_by_date.html'>Changed lines by date</a>
+          </li>
+          <li class=''>
+            <a href='insertions_by_date.html'>Lines added by date</a>
+          </li>
+          <li class=''>
+            <a href='deletions_by_date.html'>Lines deleted by date</a>
+          </li>
+        </ul>
+        <div class='tab-content'>
+          <div class='tab-pane active'>
+            <div class='page-header'>
+              <h1 class='pagination-centered'>Commits by date</h1>
+            </div>
+                    <script type="text/javascript">
+                    (function() {
+                      var onload = window.onload;
+                      window.onload = function(){
+                        if (typeof onload == "function") onload();
+                                var options = { "title": { "text": "" },"legend": { "enabled": true,"layout": "vertical","backgroundColor": "#FFFFFF","align": "left","verticalAlign": "top","x": 100,"y": 70,"floating": true,"shadow": true },"xAxis": { "title": { "text": null } },"yAxis": { "title": { "text": "Lines" },"labels": {  } },"tooltip": { "enabled": true },"credits": { "enabled": false },"plotOptions": { "areaspline": {  } },"chart": { "defaultSeriesType": "line","renderTo": "charts.commits_sum_by_author_by_date" },"subtitle": {  },"series": [{ "name": "Rupesh","type": "spline","data": [ [ 1359859399000,1 ],[ 1359859745000,2 ],[ 1359859768000,3 ],[ 1359860271000,4 ],[ 1359860553000,5 ],[ 1359860817000,6 ],[ 1359861006000,7 ],[ 1359861238000,8 ],[ 1359861448000,9 ],[ 1359865399000,10 ],[ 1359866948000,11 ],[ 1359958000000,12 ],[ 1360662711000,13 ],[ 1360668875000,14 ],[ 1360844996000,15 ],[ 1360845472000,16 ],[ 1360846669000,17 ],[ 1360916720000,18 ],[ 1360916892000,19 ],[ 1360918758000,20 ],[ 1361171784000,21 ],[ 1361172817000,22 ],[ 1361276563000,23 ],[ 1361788381000,24 ],[ 1361854421000,25 ],[ 1361944181000,26 ],[ 1361966676000,27 ],[ 1361967481000,28 ],[ 1361967516000,29 ],[ 1361990103000,30 ],[ 1362032413000,31 ],[ 1362032494000,32 ],[ 1362044179000,33 ],[ 1362044493000,34 ],[ 1362053862000,35 ],[ 1362054482000,36 ],[ 1362140720000,37 ],[ 1362377662000,38 ],[ 1362378753000,39 ],[ 1362394652000,40 ],[ 1362394667000,41 ],[ 1362469291000,42 ],[ 1362482186000,43 ],[ 1362978441000,44 ],[ 1363067226000,45 ],[ 1363069754000,46 ],[ 1363069795000,47 ],[ 1363074657000,48 ],[ 1363074680000,49 ],[ 1363783659000,50 ],[ 1363835965000,51 ],[ 1363835994000,52 ],[ 1363842315000,53 ],[ 1363842664000,54 ],[ 1363843737000,55 ],[ 1363844665000,56 ],[ 1363847947000,57 ],[ 1363848068000,58 ],[ 1363885711000,59 ],[ 1363885742000,60 ],[ 1363885837000,61 ],[ 1363886884000,62 ],[ 1363888814000,63 ],[ 1363889843000,64 ],[ 1363889873000,65 ],[ 1363890669000,66 ],[ 1363890690000,67 ],[ 1363891462000,68 ],[ 1363892210000,69 ],[ 1363892237000,70 ],[ 1363932803000,71 ],[ 1363933098000,72 ],[ 1363935422000,73 ],[ 1363935734000,74 ],[ 1363936361000,75 ],[ 1363936651000,76 ],[ 1365001676000,77 ],[ 1365008983000,78 ],[ 1365010550000,79 ],[ 1365347184000,80 ],[ 1365350222000,81 ],[ 1365395394000,82 ],[ 1366094511000,83 ],[ 1366102912000,84 ],[ 1367307665000,85 ],[ 1367570983000,86 ],[ 1367816395000,87 ],[ 1367922438000,88 ],[ 1367989377000,89 ],[ 1367991045000,90 ],[ 1369306807000,91 ],[ 1369745893000,92 ],[ 1369748563000,93 ],[ 1370413104000,94 ],[ 1370413114000,95 ],[ 1370430685000,96 ],[ 1370430706000,97 ],[ 1371797694000,98 ],[ 1372216179000,99 ],[ 1372219226000,100 ],[ 1372219246000,101 ],[ 1372416907000,102 ],[ 1372741688000,103 ] ] }] };
+                    
+                    window.chart_charts.commits_sum_by_author_by_date = new Highcharts.StockChart(options);
+            
+                      };
+                    })()
+                    </script>
+            <div id="charts.commits_sum_by_author_by_date"></div>
+            <small>
+              <center>5 best authors shown</center>
+            </small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
